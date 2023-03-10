@@ -1,0 +1,317 @@
+
+header {
+    background: url(../medias/splash.jpg)  center/cover;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    filter: brightness(0.8);
+    font-family: 'Saira Condensed', sans-serif;
+    
+}
+
+/*réutiliser pour la box au milieu */
+.logo-centre-abs { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 30px;
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0)
+}
+
+.logo-centre-abs img {
+    display: block;
+
+}
+
+.logo-centre-abs a {
+    /* changer état */
+    display: inline-block;
+    margin: 50px auto;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px ;
+    text-transform: uppercase;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.15);
+    /* fonctionne dans les deux sens !!!! */
+    transition: .3s all ease-in-out;
+    
+}
+
+.logo-centre-abs a:hover{
+    padding:10px 30px;
+    box-shadow: 0 0 200px rgba(0, 0, 0, 0.5) inset;
+    /* pas ici transition: .1s all ease-in-out; s'applique sur la transition */
+    border-radius: 8px;
+}
+
+/* menu nav  */
+.main-nav {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    padding:25px 0;
+    /* ligne noire sans rien */
+    border-bottom: 3px solid black;
+
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+
+}
+
+.main-nav a {
+    vertical-align: middle;
+    margin: 0px 20px;
+    color: #303030;
+    font: 14px;
+    display: inline-block;
+    margin:20px 20px;
+}
+
+.main-nav a:hover:not(a:nth-of-type(4)) {
+    border-bottom: 1px dotted #303030;
+}
+
+
+
+
+
+ /* --------------first block*/
+
+/* 1 */
+ .wrapper {
+    margin: 0 auto;
+    width: 940px; 
+}
+ 
+ /* 2 */
+ section {
+    text-align: center;  
+}
+
+/* 3 */
+
+div .title {
+    margin: 45px auto 20px;
+    
+}
+ h2,h3 {
+    
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+   letter-spacing: 5px;
+}
+
+/* sous titre */
+.first-block span {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    text-transform: lowercase;
+    font-size: 18px;
+    letter-spacing: 3px;
+} 
+
+
+/* trio d'img */
+
+.trio1,.trio2,.trio3{
+    width:300px;
+    display: inline-block;
+    
+}
+
+.trio2 {
+    margin: 0 20px;
+}
+section img {
+    width: 100%;
+}
+
+.products {
+    padding: 35px 0;
+}
+
+
+/* img en bg + button */
+
+.new-products {
+    background: url(../medias/bar-promo.jpg)center/cover;
+    height: 63px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+     position: relative;
+    
+    
+}
+
+
+.new-products p {
+      position: absolute;
+        line-height: 63px;
+        margin: 0 20px;
+        text-align: left;       
+}
+
+.new-products > a {
+     position: absolute;
+     top: 20px;
+     right: 0;
+     margin-right: 20px;
+     font-family: 'Oswald', sans-serif;
+   font-weight: bold;
+ 
+}
+
+
+
+
+/* ---------- article */
+
+
+article {
+    margin: 50px auto 50px;
+    width: 650px;
+    font-size: 22px;
+    line-height: 35px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+
+/* ---------bg image cornet */
+
+
+
+ .farm-fresh {
+    background: url(../medias/image-04.jpg);
+    height: 565px;
+   position: relative;
+ }
+
+
+
+.fram{
+    width: 330px;
+    height: 180px;
+    background:#fff;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    
+}
+
+.fram::before {
+    content:"";
+    top:5px;
+    left:5px;
+    right:5px;
+    bottom:5px;
+    border:2px solid #303030;
+    /* display: block; */
+    position: absolute;
+  }
+
+
+
+.fram h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0;
+    
+}
+.fram p {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 18px;   
+}
+
+.fram a {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+
+}
+.container1 {
+    position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width: 100%;
+}
+
+.footer-sections {
+  height: 152px;
+  background:url('../medias/bar-footer.jpg');
+  margin-bottom: 25px;
+  font-family: 'Cormorant Garamond', serif;
+}
+footer section {
+  display: inline-block;
+  width:calc(100% / 3);
+  vertical-align: top;
+}
+footer section a {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  text-decoration: none;
+  color:inherit;
+  font-size: 18px;
+}
+.connect {
+  text-align: center;
+}
+.connect a {
+  display: inline-block;
+  height: 22px;
+  background-image:url('../medias/icons-social.jpg');
+  margin:0 10px;
+}
+.fb {
+  width: 12px;
+}
+.ig {
+  width: 21px;
+  background-position: -12px;
+}
+.footer-info {
+  
+  height: 91px;
+  line-height:91px;
+  position: relative;
+  margin-bottom: 25px;
+}
+.footer-nav {
+  text-transform: uppercase;
+  float: left;
+}
+.footer-nav a {
+  text-decoration: none;
+  color:#303030;
+  font-size: 12px;
+}
+.footer-nav a:not(.footer-nav a:last-child)::after {
+  content:'•';
+  margin-left: 5px;
+}
+.footer-info img {
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+}
+.footer-info small {
+  float: right;
+  color:#303030;
+}
